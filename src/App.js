@@ -4,7 +4,7 @@ import Inferno from 'inferno';
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import ons from 'onsenui';
-import {Button, Toolbar} from 'react-onsenui';
+import {Page, Button, Toolbar} from 'react-onsenui';
 
 import Logo from './components/logo';
 
@@ -23,12 +23,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <Page className="App">
         <Toolbar>
-          <div class="left">
-            <ons-back-button>Back</ons-back-button>
-          </div>
-          <div class="center">Title</div>
+          <div class="center">Inferno Mobile</div>
           <div class="right">
             <ons-toolbar-button>
               <ons-icon icon="md-menu"></ons-icon>
@@ -41,10 +38,9 @@ class App extends React.Component {
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-          Done :)
         </p>
-        <Button onClick={this.handleClick}>Test</Button>
-      </div>
+        <Button onClick={this.handleClick}>Say Hello</Button>
+      </Page>
     );
   }
 }
