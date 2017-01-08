@@ -18,7 +18,7 @@ import './assets/css/App.css';
 
 class App extends React.Component {
   handleClick () {
-    ons.notification.alert('onsenui integration done');
+    ons.notification.alert('Hello World');
   }
 
   render() {
@@ -43,7 +43,7 @@ class App extends React.Component {
           To get started, edit <code>src/App.js</code> and save to reload.
           Done :)
         </p>
-        <Button onClick={this.handleClick}>onsenui Test!</Button>
+        <Button onClick={this.handleClick}>Test</Button>
       </div>
     );
   }
