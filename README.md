@@ -5,14 +5,14 @@ You can find the most recent version of this guide [here](https://github.com/inf
 
 # Inferno-Mobile
 
-Mobile application starter based on InfernoJs, Cordova and OnsenUi-React.
-
-## Requirements
+Mobile application starter based on:
 - [InfernoJs] (https://infernojs.org/)
-- [Cordova] (https://github.com/apache/cordova-cli)
+- [Cordova] (https://cordova.apache.org/)
 - [OnsenUi] (https://onsen.io/react/)
 
 ## Usage
+
 - npm install, to install all required packages.
 - npm run start, to start the dev server.
 - npm run build, will build your project in www directory.
+- Cordova commands you will find it [here] (https://cordova.apache.org/docs/en/latest/guide/cli/)
