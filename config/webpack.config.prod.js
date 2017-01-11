@@ -37,7 +37,6 @@ var publicPath = ensureSlash(homepagePathname, true);
 var publicUrl = ensureSlash(homepagePathname, false);
 // Get environment variables to inject into our app.
 var env = getClientEnvironment(publicUrl);
-
 // Assert this just to be safe.
 // Development builds of Inferno are slow and not intended for production.
 if (env['process.env'].NODE_ENV !== '"production"') {
@@ -121,7 +120,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: '/static/media/[name].[hash:8].[ext]'
         }
       },
       // Process JS with Babel.
@@ -159,7 +158,7 @@ module.exports = {
         test: /\.svg$/,
         loader: 'file',
         query: {
-          name: 'static/media/[name].[hash:8].[ext]'
+          name: '/static/media/[name].[hash:8].[ext]'
         }
       }
     ]
